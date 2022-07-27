@@ -1,0 +1,12 @@
+<div class="d-flex flex-column align-items-center bg-black h-100 justify-content-center">
+  <p [innerHTML]="'{ }'" class="fw-bolder text-white" style="font-size: 90px"></p>
+  <p class="p-0 m-0 text-white text-decoration-underline" style="font-size: 45px">Welcome to JSON Database</p>
+  <p class="p-0 m-0 mt-4 text-white">Copy this Database Id.You will need this ID to access your database</p>
+  <p class="p-0 m-0 text-white">Save this Id , once lost there is no way to retrieve it back</p>
+  <div class="d-flex bg-opacity-1 align-items-center p-4 rounded-7">
+    <p class="p-0 m-0 text-white">Database Id</p>
+    <p class="p-0 m-0 text-info mx-3">{{customId}}</p>
+    <i class="fab fa-mdb"></i>
+  </div>
+  <button class="p-3 rounded-6" (click)="activate()">Activate This ID</button>
+</div>

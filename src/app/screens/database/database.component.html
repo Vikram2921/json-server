@@ -1,0 +1,17 @@
+<div class="d-flex bg-black w-100 h-100">
+  <div class="m-3 d-flex p-3 flex-column" style="width: 20%">
+    <div class="h-25 d-flex flex-column justify-content-center text-center">
+      <p class="mb-3 text-white" style="font-size: 20px">Want to create new Database ?</p>
+      <input [(ngModel)]="dbname" class="p-1" placeholder="Database Name"/>
+      <button (click)="createNewDb(dbname)" class="button mt-4 p-3 bg-warning rounded-2 fw-bold hover-zoom">Create
+        Database
+      </button>
+    </div>
+    <app-dblist (onDeleteDone)="fetchDbList()" [dblist]="dblist" class="h-75 bg-white p-1"></app-dblist>
+  </div>
+  <div class="flex-grow-1 justify-content-center mt-5">
+    <div>
+      <p class="text-center text-white fw-bold" style="font-size: 25px">Database Id : {{dbid}}</p>
+    </div>
+  </div>
+</div>

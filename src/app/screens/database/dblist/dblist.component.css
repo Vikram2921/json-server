@@ -1,0 +1,10 @@
+.dbitem {
+  padding: 5px 5px;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid #7a7a7a;
+}
+
+.dbitem:hover {
+  background: rgba(122, 122, 122, 0.2);
+}

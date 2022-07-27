@@ -1,0 +1,12 @@
+<div class="h-100 p-2" style="overflow-y: auto">
+  <div (click)="onClick(db)" *ngFor="let db of dblist" class="d-flex dbitem mb-1">
+    <div class="flex-grow-1">
+      <p class="fw-bold" style="font-size: 20px">{{db.id}}</p>
+      <p class="" style="font-size: 14px"> Last Updated on
+        : {{db.data.updatedOn}}</p>
+    </div>
+    <div class="align-self-center">
+      <button (click)="delete(db)">Delete</button>
+    </div>
+  </div>
+</div>
