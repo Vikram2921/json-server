@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {FirebaseService} from "./service/firebase.service";
+import {Component} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,9 @@ import {FirebaseService} from "./service/firebase.service";
 })
 export class AppComponent {
   title = 'json-server';
-  constructor(private fs:FirebaseService) {
-    fs.createNewId();
+
+  constructor(private router: Router) {
   }
+
+
 }
